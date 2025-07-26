@@ -128,7 +128,7 @@
                                             <div class="grid grid-cols-5 gap-4 mb-4">
                                                 <input name="faktur" value="{{ $mutation->faktur }}" class="border-2 border-black p-2 text-black" placeholder="Faktur" required>
                                                 <input name="date" type="date" value="{{ $mutation->date }}" class="border-2 border-black p-2 text-black" required>
-                                                <input name="amount" type="text" value="{{ number_format($mutation->amount, 0, ',', '.') }}" class="border-2 border-black p-2 text-black amount-input" placeholder="Nominal" required>
+                                                <input name="amount" type="text" value="{{ $mutation->amount }}" class="border-2 border-black p-2 text-black amount-input" placeholder="Nominal" required>
 
                                                 {{-- Dropdown Type --}}
                                                 <select name="type" class="border-2 border-black p-2 text-black type-select" required data-index="0">
